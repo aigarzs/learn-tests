@@ -1,10 +1,8 @@
 from capitalize import capitalize
 
 
-if capitalize("hello") != "Hello":
-	raise Exception("Function does not work!")
+assert capitalize("hello") == "Hello"
 
-if capitalize("") != "":
-	raise Exception("Function does not work!")
+assert capitalize("") == ""
 
 print("All tests passed")
